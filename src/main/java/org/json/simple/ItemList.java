@@ -40,7 +40,8 @@ public class ItemList {
 	}
 	
 	public String[] getArray() {
-		String[] res = new String[items.size()];
+		int arraySize = items.size();
+		String[] res = new String[arraySize];
 		int index = 0;
 		for(Object item : items) {
 			res[index] = String.valueOf(item);
