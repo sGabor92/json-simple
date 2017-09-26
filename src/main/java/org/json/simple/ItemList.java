@@ -44,8 +44,7 @@ public class ItemList {
 		String[] res = new String[arraySize];
 		int index = 0;
 		for(Object item : items) {
-			res[index] = String.valueOf(item);
-			index++;
+			res[index++] = String.valueOf(item);
 		}
 		return res;
 	}
