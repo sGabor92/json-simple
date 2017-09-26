@@ -39,8 +39,14 @@ public class ItemList {
 		return this.items;
 	}
 	
-	public String[] getArray(){
-		return (String[])this.items.toArray();
+	public String[] getArray() {
+		int arraySize = items.size();
+		String[] res = new String[arraySize];
+		int index = 0;
+		for(Object item : items) {
+			res[index++] = String.valueOf(item);
+		}
+		return res;
 	}
 	
 	public void split(String s,String sp,List append,boolean isMultiToken){
